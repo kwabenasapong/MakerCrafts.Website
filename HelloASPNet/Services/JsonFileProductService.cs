@@ -57,17 +57,10 @@ namespace MakerCrafts.WebSite.Services
                 ratings.Add(rating);
                 query.Ratings = ratings.ToArray();
             }
-<<<<<<< HEAD
             using (var outputstream = File.OpenText(JsonFileName))
             {
                 JsonSerializer.Serialize<IEnumerable<Product>>(
                     new Utf8JsonWriter((IBufferWriter<byte>)outputstream, new JsonWriterOptions
-=======
-            using (var outputstre = File.OpenText(JsonFileName))
-            {
-                JsonSerializer.Serialize<IEnumerable<Product>>(
-                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
->>>>>>> 8e74042d426e266322783c7ffff6733aa269a6e9
                     {
                         SkipValidation = true,
                         Indented = true,
