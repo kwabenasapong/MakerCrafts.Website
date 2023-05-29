@@ -19,6 +19,7 @@ namespace MakerCrafts.Website.Controllers
         {
             return ProductService.GetProducts();
         }
+<<<<<<< HEAD
 
 
         [Route("Rating")]
@@ -30,5 +31,7 @@ namespace MakerCrafts.Website.Controllers
             ProductService.AddRatings(ProductId, Rating);
             return Ok();
         }
+=======
+>>>>>>> 8e74042d426e266322783c7ffff6733aa269a6e9
     }
 }
